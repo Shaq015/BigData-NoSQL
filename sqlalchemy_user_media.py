@@ -150,11 +150,3 @@ class ItemService:
         media_item = MediaItem(title, prod_year, len(title))
         self.item_repo.add(self.session, media_item)
         self.session.commit()
-
-
-# username=''
-# password=''
-# connection_string = f"mssql+pyodbc://{username}:{password}@132.72.64.124/{username}?driver=ODBC+Driver+17+for+SQL+Server"
-# engine = create_engine(connection_string)
-# Base.metadata.create_all(engine)
-# session = sessionmaker(bind=engine)()
